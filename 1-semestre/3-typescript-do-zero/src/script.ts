@@ -1,12 +1,5 @@
-let numero1 = document.getElementById('numero1') as HTMLInputElement
-let numero2 = document.getElementById('numero2') as HTMLInputElement
-let botao = document.getElementById('calcular') as HTMLInputElement
-let res = document.getElementById('resultado') as HTMLInputElement
-
-function calcular(n1: number, n2: number) {
+function somar(n1: number, n2: number): number {
     return n1 + n2
 }
 
-botao.addEventListener('click', () => {
-    res.innerHTML = calcular( +numero1.value, +numero2.value ).toString()
-})
+let num = somar(2, 3)
